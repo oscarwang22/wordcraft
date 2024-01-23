@@ -27,7 +27,7 @@ module.exports = {
   plugins: [
     new DotEnvPlugin(),
     new HtmlWebpackPlugin({
-      inject: false,
+      // Remove 'inject' or set it to true
       template: shared.resolveDir('../app/static/index.html'),
     }),
   ],
